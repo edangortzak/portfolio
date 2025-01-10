@@ -18,12 +18,12 @@ const Navbar = () => {
         <li className="p-4">Projects</li>
         <li className="p-4">Contact</li>
       </ul>
-      <div className="fixed right-4 block md:hidden" onClick={handleNav}>
-        {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+      <div className="block md:hidden" onClick={handleNav}>
+        {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
       <div
         className={
-          !nav
+          nav
             ? "fixed left-0 top-0 w-60% h-full border-r ease-in-out duration-500"
             : "fixed left-[-100%]"
         }
