@@ -2,12 +2,13 @@ import React from "react";
 import { ReactTyped } from "react-typed";
 import headshot from "../assets/headshot2.png";
 import Cards from "./Cards";
+import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
 
 const Home = () => {
   return (
-    <div className="flex justify-center items-center h-screen bg-darkslategray text-white">
+    <div className="flex flex-col justify-center items-center h-screen bg-darkslategray text-white">
       <div className="flex flex-col md:flex-row items-center max-w-[1440px] mx-auto p-4">
-        <div className=" w-1/3 flex justify-center md:justify-start pr-20">
+        <div className="w-1/3 flex justify-center md:justify-start pr-20">
           <img
             src={headshot}
             className="mx-auto max-w-full h-auto rounded-full"
@@ -41,12 +42,14 @@ const Home = () => {
               more.
             </p>
           </div>
-          <button className="bg-[#4d2fd2] w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3 text-black">
-            Contact Me
-          </button>
         </div>
       </div>
-      <Cards />
+      <div className="w-full flex justify-center mt-8">
+        <FaGithub size={40} className="mx-2" />
+        <FaLinkedin size={40} className="mx-2" />
+        <FaInstagram size={40} className="mx-2" />
+        <FaEnvelope size={40} className="mx-2" />
+      </div>
     </div>
   );
 };
