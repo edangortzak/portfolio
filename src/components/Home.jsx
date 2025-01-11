@@ -6,9 +6,9 @@ import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
 
 const Home = () => {
   return (
-    <div className="flex flex-col justify-center items-center h-screen bg-darkslategray text-white">
+    <div className="flex flex-col justify-center items-center h-screen bg-darkslategray text-white mt-28">
       <div className="flex flex-col md:flex-row items-center max-w-[1440px] mx-auto p-4">
-        <div className="w-1/3 flex justify-center md:justify-start pr-20">
+        <div className="w-1/3 flex justify-center md:justify-start pr-20 mt-6">
           <img
             src={headshot}
             className="mx-auto max-w-full h-auto rounded-full"
@@ -50,6 +50,9 @@ const Home = () => {
         <FaInstagram size={40} className="mx-2" />
         <FaEnvelope size={40} className="mx-2" />
       </div>
+      <div className="text-bold text-4xl mt-24 mb-6">Featured Projects</div>
+
+      <Cards />
     </div>
   );
 };
