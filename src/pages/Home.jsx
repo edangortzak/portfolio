@@ -1,8 +1,9 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
 import headshot from "../assets/headshot2.png";
-import Cards from "./Cards";
+import Cards from "../components/Cards";
 import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -45,14 +46,30 @@ const Home = () => {
         </div>
       </div>
       <div className="w-full flex justify-center mt-8">
-        <FaGithub size={40} className="mx-2" />
-        <FaLinkedin size={40} className="mx-2" />
-        <FaInstagram size={40} className="mx-2" />
-        <FaEnvelope size={40} className="mx-2" />
+        <a href="https://github.com/edangortzak" target="_blank">
+          <FaGithub size={40} className="mx-2 hover:scale-125" />
+        </a>
+        <a href="https://www.linkedin.com/in/edangortzak/" target="_blank">
+          <FaLinkedin size={40} className="mx-2 hover:scale-125" />
+        </a>
+
+        <a href="https://www.instagram.com/edan.gortzak/" target="_blank">
+          <FaInstagram size={40} className="mx-2 hover:scale-125" />
+        </a>
+
+        <a href="mailto:edan.gortzak@berkeley.edu" target="_blank">
+          <FaEnvelope size={40} className="mx-2 hover:scale-125" />
+        </a>
       </div>
       <div className="text-bold text-4xl mt-24 mb-6">Featured Projects</div>
 
       <Cards />
+
+      <div className="flex justify-center items-center mt-8">
+        <button className="bg-[lightblue] text-white py-2 px-4 rounded-lg hover:scale-105 duration-300">
+          View All Projects
+        </button>
+      </div>
     </div>
   );
 };
