@@ -22,9 +22,11 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="px-4">
-            <button className="uppercase font-bold hover:scale-125 duration-200">
-              About
-            </button>
+            <Link to="/about">
+              <button className="uppercase font-bold hover:scale-125 duration-200">
+                About
+              </button>
+            </Link>
           </li>
           <li className="px-4">
             <Link to="/work">
@@ -34,14 +36,18 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="px-4">
-            <button className="uppercase font-bold hover:scale-125 duration-200">
-              Projects
-            </button>
+            <Link to="/projects">
+              <button className="uppercase font-bold hover:scale-125 duration-200">
+                Projects
+              </button>
+            </Link>
           </li>
           <li className="px-4">
-            <button className="uppercase font-bold hover:scale-125 duration-200">
-              Contact
-            </button>
+            <Link to="/contact">
+              <button className="uppercase font-bold hover:scale-125 duration-200">
+                Contact
+              </button>
+            </Link>
           </li>
         </ul>
 
